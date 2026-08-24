@@ -6,5 +6,5 @@
  */
 
 // Example:
-// import { formatName } from './exercise01.js';
-// console.log(formatName('John', 'Doe', 'Quincy'));
+import { formatName } from './exercise01.js';
+console.log(formatName('John', 'Doe', 'Quincy'));
