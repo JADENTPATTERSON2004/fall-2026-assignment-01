@@ -1,15 +1,19 @@
 export class Stack<T> {
-  public push(item: T): void {}
+  private items:T[] = [];
+
+  public push(item: T): void {
+    this.items.push(item);
+  }
 
   public pop(): T | undefined {
-    return undefined;
+    return this.items.pop();
   }
 
   public peek(): T | undefined {
-    return undefined;
+    return this.items[this.items.length - 1];
   }
 
   public size(): number {
-    return 0;
+    return this.items.length;
   }
 }
